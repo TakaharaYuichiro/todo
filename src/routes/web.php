@@ -21,8 +21,6 @@ Route::patch('/todos/update', [TodoController::class, 'update']);
 Route::delete('/todos/delete', [TodoController::class, 'delete']);
 Route::get('/todos/search', [TodoController::class, 'search']);
 
-Route::get('/todos/search/keyword', [TodoController::class, 'searchKeyword']);
-Route::get('/todos/search/category', [TodoController::class, 'searchCategory']);
 
 Route::get('/categories', [CategoryController::class, 'index']);
 Route::post('/categories', [CategoryController::class, 'store']);
